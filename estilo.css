@@ -1,0 +1,132 @@
+html {
+	font-size: 62.5%;
+	font-family: Tahoma;
+	font-weight: 300;
+	line-height: 1rem;
+	letter-spacing: .08rem;
+}
+
+body {
+	background: url(batman.jpg);
+	background-position: center;
+	background-size: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	font-size: 1.4rem;
+	font-weight: inherit;
+	
+
+	height: 100vh;
+	width: 100vw;
+}
+
+.container {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 20em;
+	width: 60em;
+	border-radius: 3px;
+	
+}
+
+.clock-column {
+	margin-right: 7rem;
+	text-align: center;
+	position: relative;
+
+}
+
+.clock-column:last-child {
+	margin-right: 0;
+}
+
+
+.clock-label {
+	padding-top: 10px;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+
+	
+}
+
+.clock-timer {
+	
+    text-align: center;
+    font-size: 40px;
+    margin:  0 2.5%;
+    color:#fff;
+    padding: 20px;
+    width:50%;
+    border-radius: 20px;
+    
+
+    
+
+}
+
+.clock-day{
+	background-color: rgba(13, 13, 13, 0.8);
+	padding: 1em;
+	
+	transform: 1s rotate(360deg) ;
+
+
+}
+
+.clock-hours{
+	background-color: rgba(13, 13, 13, 0.8);
+	padding: 1em;
+}
+
+.clock-minutes{
+	background-color: rgba(13, 13, 13, 0.8);
+	padding: 1em;
+}
+
+.clock-seconds{
+	background-color: rgba(13, 13, 13, 0.8);
+	padding: 1em;
+	;
+	
+	
+}
+
+
+
+
+@keyframes clock-seconds{
+    0%{transform: rotatex(0deg)}
+    100%{transform: rotatex(360deg)}
+}
+
+
+.clock-input {
+	font-weight: 2em;
+	text-align: center;
+	max-width: 500px;
+	width: 100%;
+	margin: 0 auto 10px;
+}
+input#time-to {
+	padding: 5px;
+	border: 0;
+	border-radius: 3px;
+	font-size: 16px;
+	font-family: monospace;
+	text-align: center;
+	color: #010101;
+	background-color: #fff;
+}
+.done {
+	color: #fff;
+	font-weight: 600;
+}
+
